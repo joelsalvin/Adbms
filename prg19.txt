@@ -1,0 +1,96 @@
+> use employee
+switched to db employee
+> db.createCollection("EMPL")
+{ "ok" : 1 }
+>
+2)
+> db.EMPL.insertMany([{Empno:1,Name:"ram",Salary:20000,Role:"Manager"},{Empno:2,
+Name:"sam",Salary:15000,Role:"Sales"}])
+> db.EMPL.insertMany([{Empno:3,Name:"mike",Salary:50000,Role:"HR Manager"},{Empn
+o:4,Name:"menu",Salary:18000,Role:"rescure officer"}])
+> db.EMPL.insertMany([{Empno:5,Name:"ken",Salary:25000,Role:"doctor"},{Empno:6,N
+ame:"sinu",Salary:19000,Role:"system admin"}])
+> db.EMPL.insertMany([{Empno:7,Name:"jen",Salary:90000,Role:"Ceo"},{Empno:8,Name
+:"manny",Salary:65000,Role:"assistant"}])
+> db.EMPL.insertMany([{Empno:9,Name:"ben",Salary:40000,Role:"operator"},{Empno:1
+0,Name:"jef",Salary:63000,Role:"db admin"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("628c58d9af36d68eaafd1471"),
+                ObjectId("628c58d9af36d68eaafd1472")
+        ]
+}
+
+3)
+> db.EMPL.find().pretty()
+{
+        "_id" : ObjectId("628c57f0af36d68eaafd1469"),
+        "Empno" : 1,
+        "Name" : "ram",
+        "Salary" : 20000,
+        "Role" : "Manager"
+}
+{
+        "_id" : ObjectId("628c57f0af36d68eaafd146a"),
+        "Empno" : 2,
+        "Name" : "sam",
+        "Salary" : 15000,
+        "Role" : "Sales"
+}
+{
+        "_id" : ObjectId("628c582eaf36d68eaafd146b"),
+        "Empno" : 3,
+        "Name" : "mike",
+        "Salary" : 50000,
+        "Role" : "HR Manager"
+}
+{
+        "_id" : ObjectId("628c582eaf36d68eaafd146c"),
+        "Empno" : 4,
+        "Name" : "menu",
+        "Salary" : 18000,
+        "Role" : "rescure officer"
+}
+{
+        "_id" : ObjectId("628c5870af36d68eaafd146d"),
+        "Empno" : 5,
+        "Name" : "ken",
+        "Salary" : 25000,
+        "Role" : "doctor"
+}
+{
+        "_id" : ObjectId("628c5870af36d68eaafd146e"),
+        "Empno" : 6,
+        "Name" : "sinu",
+        "Salary" : 19000,
+        "Role" : "system admin"
+}
+{
+        "_id" : ObjectId("628c58a7af36d68eaafd146f"),
+        "Empno" : 7,
+        "Name" : "jen",
+        "Salary" : 90000,
+        "Role" : "Ceo"
+}
+{
+        "_id" : ObjectId("628c58a7af36d68eaafd1470"),
+        "Empno" : 8,
+        "Name" : "manny",
+        "Salary" : 65000,
+        "Role" : "assistant"
+}
+{
+        "_id" : ObjectId("628c58d9af36d68eaafd1471"),
+        "Empno" : 9,
+        "Name" : "ben",
+        "Salary" : 40000,
+        "Role" : "operator"
+}
+{
+        "_id" : ObjectId("628c58d9af36d68eaafd1472"),
+        "Empno" : 10,
+        "Name" : "jef",
+        "Salary" : 63000,
+        "Role" : "db admin"
+}
