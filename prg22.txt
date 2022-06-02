@@ -1,0 +1,41 @@
+> db.createUser({user:"sam",pwd:"password",roles:[{role:"userAdminAnyDatabase",d
+b:"admin"}]})
+Successfully added user: {
+        "user" : "sam",
+        "roles" : [
+                {
+                        "role" : "userAdminAnyDatabase",
+                        "db" : "admin"
+                }
+        ]
+}
+
+
+> db.createUser({user:"joel",pwd:"1234",roles:[{role:"read",db:"marketing"},{role
+:"readWrite",db:"sales"}]})
+Successfully added user: {
+        "user" : "joel",
+        "roles" : [
+                {
+                        "role" : "read",
+                        "db" : "marketing"
+                },
+                {
+                        "role" : "readWrite",
+                        "db" : "sales"
+                }
+        ]
+}
+
+
+> db.createUser({user:"joel",pwd:"1234",roles:[{role:"userAdmin",db:
+"employee"}]})
+Successfully added user: {
+        "user" : "joel",
+        "roles" : [
+                {
+                        "role" : "userAdmin",
+                        "db" : "employee"
+                }
+        ]
+}
